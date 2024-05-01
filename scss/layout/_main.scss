@@ -1,0 +1,356 @@
+.main {
+  background-image: url(../../images/svg/header-left-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top 300px right -250px;
+  .skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 7rem;
+    margin-bottom: 11rem;
+    .skills__item {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 332px;
+      margin: 1.9rem 0rem;
+    }
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    .projects__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8rem;
+    }
+    .projects__cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .projects__cards__item {
+        width: 100%;
+        max-width: 540px;
+        margin-bottom: 7rem;
+        .projects__cards__item__img__wrapper {
+          background-image: url(../../images/png/design-portfolio.png);
+          background-repeat: no-repeat;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-size: cover;
+          width: 100%;
+          height: 400px;
+          margin-bottom: 2rem;
+          &:hover {
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.75),
+                rgba(0, 0, 0, 0.75)
+              ),
+              url(../../images/png/design-portfolio.png);
+            cursor: pointer;
+            .links__wrapper {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+          .links__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 4.8rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            a {
+              transition: 0.3s;
+              text-align: center;
+            }
+          }
+        }
+        .projects__cards__item__title {
+          margin-bottom: 0.7rem;
+        }
+        .projects__cards__item__text__wrapper {
+          display: flex;
+          gap: 1.8rem;
+          margin-bottom: 2rem;
+        }
+        .projects__cards__bottom-links {
+          display: none;
+          gap: 3rem;
+        }
+        &:nth-child(2) .projects__cards__item__img__wrapper {
+          background-image: url(../../images/png/e-learning.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          &:hover {
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.75),
+                rgba(0, 0, 0, 0.75)
+              ),
+              url(../../images/png/e-learning.png);
+            cursor: pointer;
+            .links__wrapper {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+        &:nth-child(3) .projects__cards__item__img__wrapper {
+          background-image: url(../../images/png/todo-img.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          &:hover {
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.75),
+                rgba(0, 0, 0, 0.75)
+              ),
+              url(../../images/png/todo-img.png);
+            cursor: pointer;
+            .links__wrapper {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+        &:nth-child(4) .projects__cards__item__img__wrapper {
+          background-image: url(../../images/png/entertainment.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          &:hover {
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.75),
+                rgba(0, 0, 0, 0.75)
+              ),
+              url(../../images/png/entertainment.png);
+            cursor: pointer;
+            .links__wrapper {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+        &:nth-child(5) .projects__cards__item__img__wrapper {
+          background-image: url(../../images/png/memory-game.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          &:hover {
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.75),
+                rgba(0, 0, 0, 0.75)
+              ),
+              url(../../images/png/memory-game.png);
+            cursor: pointer;
+            .links__wrapper {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+        &:nth-child(6) .projects__cards__item__img__wrapper {
+          background-image: url(../../images/png/art-gallery.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          &:hover {
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.75),
+                rgba(0, 0, 0, 0.75)
+              ),
+              url(../../images/png/art-gallery.png);
+            cursor: pointer;
+            .links__wrapper {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    margin-bottom: 6rem;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    .projects {
+      .projects__cards {
+        justify-content: space-evenly;
+        gap: 2rem;
+        .projects__cards__item {
+          max-width: 460px;
+          .projects__cards__item__img__wrapper {
+            height: 253px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    background-position: top 500px right -340px;
+    .projects {
+      .projects__top {
+        .projects__top__title {
+          font-size: 7.2rem;
+        }
+      }
+      .projects__cards {
+        .projects__cards__item {
+          max-width: 340px;
+          margin-bottom: 6rem;
+          .projects__cards__item__img__wrapper {
+            .links__wrapper {
+              display: none;
+            }
+          }
+          .projects__cards__item__title {
+            font-size: 2.3rem;
+          }
+          .projects__cards__bottom-links {
+            display: flex;
+          }
+          &:nth-child(1) .projects__cards__item__img__wrapper {
+            background-image: url(../../images/png/design-portfolio.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &:hover {
+              background-image: url(../../images/png/design-portfolio.png);
+              cursor: pointer;
+              .links__wrapper {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+          &:nth-child(2) .projects__cards__item__img__wrapper {
+            background-image: url(../../images/png/e-learning.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &:hover {
+              background-image: url(../../images/png/e-learning.png);
+              cursor: pointer;
+              .links__wrapper {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+          &:nth-child(3) .projects__cards__item__img__wrapper {
+            background-image: url(../../images/png/todo-img.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &:hover {
+              background-image: url(../../images/png/todo-img.png);
+              cursor: pointer;
+              .links__wrapper {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+          &:nth-child(4) .projects__cards__item__img__wrapper {
+            background-image: url(../../images/png/entertainment.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &:hover {
+              background-image: url(../../images/png/entertainment.png);
+              cursor: pointer;
+              .links__wrapper {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+          &:nth-child(5) .projects__cards__item__img__wrapper {
+            background-image: url(../../images/png/memory-game.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &:hover {
+              background-image: url(../../images/png/memory-game.png);
+              cursor: pointer;
+              .links__wrapper {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+          &:nth-child(6) .projects__cards__item__img__wrapper {
+            background-image: url(../../images/png/art-gallery.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &:hover {
+              background-image: url(../../images/png/art-gallery.png);
+              cursor: pointer;
+              .links__wrapper {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 727px) {
+  .main {
+    background-position: top 900px right -340px;
+    .skills {
+      justify-content: center;
+      .skills__item {
+        text-align: center;
+        max-width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    .projects {
+      .projects__top {
+        margin-bottom: 4rem;
+        .projects__top__title {
+          font-size: 4rem;
+        }
+      }
+      .projects__cards {
+        .projects__cards__item {
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main {
+    background-position: top 650px right -340px;
+    .skills {
+      .skills__item {
+        gap: 0.1rem;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        .skills__item__title {
+          font-size: 3.2rem;
+        }
+        .skills__item__text {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    hr {
+      display: block;
+    }
+  }
+}
